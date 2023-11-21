@@ -5,7 +5,7 @@ const toastLiveExample = document.getElementById('liveToast')
 const verification = () => {
     var inputValue = document.getElementById('exampleInputEmail1').value
     if (inputValue === "AN01hP") {
-        window.location.href = "https://nakamure111.github.io/main.html";
+        window.location.href = "https://ilovedasha.github.io/main.html";
 
     }else{
         if (toastTrigger) {
