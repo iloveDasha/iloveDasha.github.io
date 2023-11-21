@@ -1,0 +1,338 @@
+html {
+font-size: 15px;
+}
+    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/file/image/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.greetings::before{
+    background-color:rgba(0, 0, 0, .5);
+
+}
+.explanation-greetings {
+    width: 40%;
+    text-align: center;
+    
+}
+.explanation-greetings-text {
+    font-size: 1.5rem;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.7s ease 0.4s;
+
+}
+.explanation-greetings-text._active{
+    transform: translate(0px, -50px);
+    opacity: 1;
+    
+}
+.hello {
+    font-size: 7rem;
+    
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.7s ease 0s;
+}
+.hello._active {
+    transform: translate(0px, -50px);
+    opacity: 1;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 1200px;
+    background-color: white;
+    padding-top: 120px;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.question{
+    font-size: 3rem;
+
+}
+.answer{
+    font-size: 2rem;
+    text-align: right;
+
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 2s ease 0.3s;
+}
+.answer._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.leftA{
+    transform: translate(-120%, 0px);
+    text-align: left;
+
+}
+.answer-container{
+    display: flex;
+    flex-direction: row;
+    justify-items:flex-end;
+    align-items: center;
+    margin: 30px;
+
+}
+.answer-container-left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items:flex-end;
+    align-items: center;
+    margin: 30px;
+}
+img{
+    object-fit: contain;
+    width: 256px !important;
+    height: 256px !important ;
+    margin: 20px;
+}
+.img{
+    transform: translate(125%, 0px);
+    opacity: 0;
+    transition: all 2s ease 0.1s;
+}
+.img._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+
+}
+.img-left{
+    transform: translate(-125%, 0px);
+    opacity: 0;
+    transition: all 2s ease 0.1s;
+}
+.img-left._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    border-top: 2px black;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon{
+    max-width: 50px;
+    max-height: 50px;
+}
+.border-top{
+    border-top: 5px black;
+}
+.cement{
+    width: 128px;
+    height: 80px;
+}
+@media (max-width: 480px) {
+    .hello{
+        font-size: 3rem;
+    }
+    .explanation-greetings-text{
+        font-size: 0.8rem;
+    }
+    .explanation-greetings {
+        width: 70%;;
+        
+    }
+    .greetings{
+        background-size: 300%;
+        background-position: 50% 60%;
+    }
+    .block{
+        flex-direction: column;
+        margin-bottom:0px;
+        }
+    .question{
+        margin: 5%;
+        text-align: center;
+    }
+    .answer{
+        margin: 5%;
+    }
+    .answer-container{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .answer-container-left{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .body{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .explanation-greetings-text._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        
+    }
+    .hello._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    .cement{
+        display: none;
+    }
+    .designBy{
+        margin-left: 10%;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .hello{
+        font-size: 4rem;
+    }
+    .explanation-greetings-text{
+        font-size: 1.5rem;
+    }
+    .explanation-greetings {
+        width: 60%;;
+        
+    }
+    .greetings{
+        background-size: auto;
+    }
+    .greetings{
+        background-size: 300%;
+        background-position: 50% 60%;
+    }
+    .block{
+        flex-direction: column;
+        margin-bottom:0px;
+        }
+    .question{
+        margin: 5%;
+        text-align: center;
+    }
+    .answer{
+        margin: 5%;
+    }
+    .answer-container{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .answer-container-left{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .body{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .cement{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hello{
+        font-size: 5rem;
+    }
+    .explanation-greetings-text{
+        font-size: 2rem;
+    }
+    .explanation-greetings {
+        width: 50%;;
+        
+    }
+    .hello{
+        font-size: 4rem;
+    }
+    .explanation-greetings-text{
+        font-size: 1.5rem;
+    }
+    .explanation-greetings {
+        width: 60%;;
+        
+    }
+    .greetings{
+        background-size: auto;
+    }
+    .greetings{
+        background-size: 300%;
+        background-position: 50% 60%;
+    }
+    .block{
+        flex-direction: column;
+        margin-bottom:0px;
+        }
+    .question{
+        margin: 5%;
+        text-align: center;
+    }
+    .answer{
+        margin: 5%;
+    }
+    .answer-container{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .answer-container-left{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .body{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .cement{
+        display: none;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .explanation-greetings{
+       width: 28%;
+    }
+
+    
+}
+@media (min-width: 1600px) {
+    .explanation-greetings{
+        width: 28%;
+     }
+
+}
